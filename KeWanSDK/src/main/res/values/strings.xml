@@ -1,0 +1,30 @@
+<resources>
+    <string name="kewan_app_name">KeWanSDK</string>
+    <string name="kewan_phone_number">请输入手机号</string>
+    <string name="kewan_game_phone_number">请输入账号</string>
+    <string name="kewan_forget_pwd">忘记密码</string>
+    <string name="kewan_login">登录</string>
+    <string name="kewan_pwd">请输入密码</string>
+    <string name="kewan_new_pwd">请输入新密码</string>
+    <string name="kewan_confirm_new_pwd">请确认新密码</string>
+    <string name="kewan_immediately_login">登录</string>
+    <string name="kewan_register">手机号注册</string>
+    <string name="kewan_fast_register">账号注册</string>
+    <string name="kewan_register_method">选择注册方式</string>
+    <string name="kewan_find_the_pwd">忘记密码?</string>
+    <string name="kewan_verification_code">验证码</string>
+    <string name="kewan_get_verification_code">获取验证</string>
+    <string name="kewan_set_pwd">6-12字符</string>
+    <string name="kewan_commit">提交修改</string>
+    <string name="kewan_invitation_code">邀请码</string>
+    <string name="kewan_pay_method">请选择支付方式</string>
+    <string name="kewan_pay_alipay">支付宝</string>
+    <string name="kewan_pay_wechat">微信</string>
+    <string name="kewan_cancal">取消</string>
+    <string name="kewan_pay_result">微信支付结果</string>
+    <string name="kewan_pay_complete">已完成</string>
+    <string name="kewan_pay_cancel">去支付</string>
+    <string name="kewan_account_edittext_hint">6-12位字母或数字</string>
+    <string name="kewan_immediately_register">立即注册</string>
+    <string name="kewan_bind_phone">绑定防盗号验证</string>
+</resources>

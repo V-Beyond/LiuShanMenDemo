@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 设置透明背景色 -->
+    <gradient android:startColor="#54B12C" android:centerColor="#54B12C" android:endColor="#54B12C"></gradient>
+    <corners android:topLeftRadius="6dp"
+        android:topRightRadius="6dp"></corners>
+
+</shape>

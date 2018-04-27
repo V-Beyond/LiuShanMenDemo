@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/all_layout_heigh"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kewan_bg_login"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y20"
+            android:src="@drawable/kewan_iv_login_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/y26"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:background="@drawable/kewan_shape_edittext"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/kewan_iv_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/y20"
+                    android:src="@drawable/kewan_iv_account" />
+
+                <EditText
+                    android:id="@+id/kewan_edittext_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/kewan_iv_clear"
+                    android:layout_toRightOf="@+id/kewan_iv_account"
+                    android:background="@null"
+                    android:hint="@string/kewan_game_phone_number"
+                    android:textColorHint="#838383"
+                    android:inputType="number"
+                    android:textColor="#838383"
+                    android:textSize="11sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/kewan_iv_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/y20"
+                    android:src="@drawable/kewan_iv_down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kewan_rl_account"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/kewan_list_account"
+                    android:dividerHeight="@dimen/y20"
+                    android:divider="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@drawable/kewan_shape_edittext"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/y20"
+                    android:src="@drawable/kewan_iv_password" />
+
+                <EditText
+                    android:id="@+id/kewan_edittext_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColorHint="#838383"
+                    android:hint="@string/kewan_pwd"
+                    android:inputType="textPassword"
+                    android:textColor="#838383"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kewan_tv_forget_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/y20"
+                android:gravity="right"
+                android:text="@string/kewan_find_the_pwd"
+                android:textColor="#7dc6ec"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/kewan_tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@drawable/kewan_shape_login_textview"
+                android:gravity="center"
+                android:padding="@dimen/y20"
+                android:text="@string/kewan_immediately_login"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y10"
+                android:layout_marginTop="@dimen/y10">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y2"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/kewan_tv_register_method"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:id="@+id/kewan_tv_register_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/kewan_register_method"
+                    android:textColor="#5d5d5d"
+                    android:textSize="9sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y2"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/kewan_tv_register_method"
+                    android:background="#cccccc" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/kewan_tv_phone_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x70"
+                        android:layout_height="@dimen/y70"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/kewan_iv_phone_register" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/y20"
+                        android:gravity="center"
+                        android:textSize="9sp"
+                        android:text="手机" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

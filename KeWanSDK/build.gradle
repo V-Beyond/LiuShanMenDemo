@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+
+    }
+
+}
+//task makeJar(type: Jar) {
+//    from file('build/intermediates/classes/release')
+//    archiveName = 'KeWanSDK.jar'
+//    destinationDir = file('build/libs')
+//    //过滤不需要的class
+//    exclude "**/**/BuildConfig.class"
+//    exclude "**/**/BuildConfig\$*.class"
+//    exclude "**/R.class"
+//    exclude "**/R\$*.class"
+//
+//    //指定打包的class
+//    include "com/hpkj/gamesdk/**/*.class"
+//}
+//makeJar.dependsOn(build)
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:26.+'
+//    compile 'org.xutils:xutils:3.5.0'
+}

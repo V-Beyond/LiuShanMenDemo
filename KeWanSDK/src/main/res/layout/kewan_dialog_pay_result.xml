@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_above="@+id/kewan_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kewan_shape_textview"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="206px"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/kewan_pay_result" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#b3b3b3"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="186px">
+                <TextView
+                    android:id="@+id/kewan_tv_complete"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/kewan_pay_complete"
+                    android:textColor="#6fb2e2" />
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#b3b3b3"></View>
+
+                <TextView
+                    android:id="@+id/kewan_tv_pay"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/kewan_pay_cancel"
+                    android:textColor="#6fb2e2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

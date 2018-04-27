@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_width">@dimen/x520</dimen>
+    <dimen name="layout_height">340dp</dimen>
+    <dimen name="all_layout_heigh">@dimen/y650</dimen>
+    <dimen name="edittext_height">@dimen/y80</dimen>
+</resources>
